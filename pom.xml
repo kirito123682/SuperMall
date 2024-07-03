@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.aoyamananam1.supermall</groupId>
+    <artifactId>supermall</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>supermall</name>
+    <description>root-service</description>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>supermall-coupon</module>
+        <module>supermall-order</module>
+        <module>supermall-product</module>
+        <module>supermall-member</module>
+        <module>supermall-ware</module>
+    </modules>
+
+</project>
