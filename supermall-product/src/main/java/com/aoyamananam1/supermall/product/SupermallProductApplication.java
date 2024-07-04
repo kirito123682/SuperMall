@@ -1,8 +1,18 @@
 package com.aoyamananam1.supermall.product;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * 整合mybatis-plus
+ * 		1依赖
+ * 		2配置
+ * 			2.1配置数据源
+ * 				驱动
+ * 			2.2配置mp
+ */
+@MapperScan("com.aoyamananam1.supermall.product.dao")
 @SpringBootApplication
 public class SupermallProductApplication {
 
