@@ -3,6 +3,7 @@ package com.aoyamananam1.supermall.product;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  * 整合mybatis-plus
@@ -12,6 +13,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * 				驱动
  * 			2.2配置mp
  */
+@EnableDiscoveryClient
 @MapperScan("com.aoyamananam1.supermall.product.dao")
 @SpringBootApplication
 public class SupermallProductApplication {
