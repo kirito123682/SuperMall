@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+  application:
+    name: supermall-third-party
+
+server:
+  port: 30000
+
+Qiniu:
+  access-key: qOt6AX1zl7RHdsRVgObFH96lI_jYOZb6h6gvAsDd
+  secret-key: gus8_iRyEvBJ09yi_yJraqF0X3Ek5fRhUQI3MRHU
+  bucket-name: super-mall-bucket
+  url: http://sguydjlde.hn-bkt.clouddn.com

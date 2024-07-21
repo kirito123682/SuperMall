@@ -22,3 +22,4 @@ server:
 logging:
   level:
     com.aoyamananam1.supermall: debug
+
