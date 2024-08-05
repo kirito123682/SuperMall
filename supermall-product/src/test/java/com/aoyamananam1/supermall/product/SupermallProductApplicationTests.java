@@ -3,6 +3,7 @@ package com.aoyamananam1.supermall.product;
 import com.alibaba.nacos.shaded.com.google.gson.Gson;
 import com.aoyamananam1.supermall.product.entity.BrandEntity;
 import com.aoyamananam1.supermall.product.service.BrandService;
+import com.aoyamananam1.supermall.product.service.CategoryService;
 import com.aoyamananam1.supermall.product.service.impl.BrandServiceImpl;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.qiniu.common.QiniuException;
@@ -12,6 +13,7 @@ import com.qiniu.storage.Region;
 import com.qiniu.storage.UploadManager;
 import com.qiniu.storage.model.DefaultPutRet;
 import com.qiniu.util.Auth;
+import lombok.extern.slf4j.Slf4j;
 import org.hibernate.validator.internal.metadata.raw.BeanConfiguration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -23,14 +25,25 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.annotation.Bean;
 
 import java.awt.event.ItemEvent;
+import java.util.Arrays;
 import java.util.List;
 
 @SpringBootTest()
+@Slf4j
 class SupermallProductApplicationTests {
 
 
 	@Autowired
 	private BrandService brandService;
+
+	@Autowired
+	private CategoryService categoryService;
+
+	@Test
+	void test2(){
+		Long[] catelogPath = categoryService.findCatelogPath(225L);
+		log.info("路径： {}", Arrays.asList(catelogPath));
+	}
 
 //	@TestConfiguration
 //	static class brandServiceImplTestContextConfiguration{
