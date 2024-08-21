@@ -1,0 +1,5 @@
+logging:
+  level:
+    com.aoyamananam1.supermall: debug
+server:
+  port: 12000

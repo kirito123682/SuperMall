@@ -1,0 +1,13 @@
+package com.aoyamananam1.supermall.ware.vo;
+
+import lombok.Data;
+
+import java.util.List;
+
+@Data
+public class MergeVO {
+
+    private Long purchaseId;
+
+    private List<Long> items;
+}
