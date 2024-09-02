@@ -3,3 +3,7 @@ logging:
     com.aoyamananam1.supermall: debug
 server:
   port: 12000
+
+spring:
+  thymeleaf:
+    cache: false

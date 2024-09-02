@@ -62,7 +62,13 @@ spring:
         - id: supermall-host-route
           uri: lb://supermall-product
           predicates:
-            - Host=**.supermall00.com
+            - Host=supermall00.com,item.supermall00.com
+
+        - id: supermall-search-route
+          uri: lb://supermall-search
+          predicates:
+            - Host=search.supermall00.com
+
 
 
 server:
