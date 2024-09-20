@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.session.data.redis.config.annotation.web.http.EnableRedisHttpSession;
 
 /**
  * 整合mybatis-plus
@@ -15,6 +16,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * 				驱动
  * 			2.2配置mp
  */
+@EnableRedisHttpSession
 @EnableFeignClients(basePackages = "com.aoyamananam1.supermall.product.feign")
 @EnableDiscoveryClient
 @MapperScan("com.aoyamananam1.supermall.product.dao")

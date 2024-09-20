@@ -46,6 +46,6 @@ public class SkuItemVO {
     @Data
     public static class SpuBaseAttrVO{
         private String attrName;
-        private List<String> attrValue;
+        private String attrValue;
     }
 }

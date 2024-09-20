@@ -32,6 +32,12 @@
 	</properties>
 	<dependencies>
 
+<!--		springsession-->
+		<dependency>
+			<groupId>org.springframework.session</groupId>
+			<artifactId>spring-session-data-redis</artifactId>
+		</dependency>
+
 <!--		redisson-->
 		<!-- https://mvnrepository.com/artifact/org.redisson/redisson -->
 		<dependency>

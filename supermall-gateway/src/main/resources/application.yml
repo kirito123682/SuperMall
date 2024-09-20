@@ -69,6 +69,10 @@ spring:
           predicates:
             - Host=search.supermall00.com
 
+        - id: supermall-auth-route
+          uri: lb://supermall-auth-server
+          predicates:
+            - Host=auth.supermall00.com
 
 
 server:
