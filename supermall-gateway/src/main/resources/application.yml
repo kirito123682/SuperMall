@@ -74,6 +74,11 @@ spring:
           predicates:
             - Host=auth.supermall00.com
 
+        - id: supermall-cart-route
+          uri: lb://supermall-cart
+          predicates:
+            - Host=cart.supermall00.com
+
 
 server:
   port: 88
